@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../blog.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        
+        <header>
+
+            <div class="thead">
+                <a href="../index.htm" style="float: left; 
+                    text-shadow: 0.5px 0.5px 0.5px black;">
+                <b>Js</b>
+                </a>
+                <a href="https://github.com/iamfaizaljafer/Resume/blob/main/MohamedFaizal.md" target="_blank"> Resume </a>
+            </div>
+    
+            </header>
+        
+        
+        
+        
+        <div class="content content-area">
+
+        
+        <h1>Docker</h1>
+        <p>
+            Docker is an open source platform for developing, shipping and running applications.
+            <br>
+            Container - Docker provides the ability to package and 
+            run an application in a loosely isolated environment.
+            <br>
+            Written in GO programming language.
+        </p>
+        <h2> Features of docker</h2>
+        <p>
+            Docker has the ability to reduce the size of development by use of containers.
+            <br>
+            You can deploy containers anywhere. (VMware, Physical server and Could)
+            <br>
+            Docker conatiners are lightweight and easily scalable.
+            <br>
+            Running more and different type of workloads on the same hardware.
+        </p>
+
+        <h2>Docker Architecture</h2>
+        <p>
+            Docker uses a client-server architecture.
+            <br>
+            The Docker client talks to the Docker daemon, which does the heavy lifting of building,
+            running and distributing your Docker containers.
+            <br>
+            The Docker client and daemon can run on the same system or
+            you can connect a Docker client to a remote docker Daemon.
+            <br>
+            Docker client and daemon communicate using a REST API, over UNIX or a network interface.
+            <br>
+            <img src="./docker-architecture.svg">
+        </p>
+        <h3>
+            Docker Daemon
+        </h3>
+        <p>
+            <i>Dockerd</i> daemon listens for Docker API requests and manages Docker objects
+            such as images, containers, networks and vloumes.
+            A daemon can aslo communicate with other daemons. 
+        </p>
+        <h3>
+            Docker client
+        </h3>
+        <p>
+            When we run docker commands, the docker client sends these commands to dockerd.
+            The docker command uses docker API.
+        </p>
+
+        <h3>
+            Docker Registries
+        </h3>
+        <p>
+            A Docker registry stores Docker Images. Docker Hub is a public registry that anyone can use.
+            <br>
+            Docker is configured to look for images on Docker Hub by default.
+            <br>
+            commands - docker push, docker pull, docker run.
+        </p>
+        <h3>
+            Docker objects
+        </h3>
+        <p>
+            Images, conatiners, networks and volumes.
+        </p>
+        <h4>
+            Images
+        </h4>
+        <p>
+            Image is a read-only template for creating docker container. 
+            <br>
+            An image could be created based on another image.
+            <br>
+            Docker image consists of multiple layers.
+            <br><br>
+            Using a docker file you could create an image and run it. 
+            <br>
+            Each instruction in a dockerfile creates a layer in the image.
+            When we change the dockerfile and rebuild the image, only those layers which have been changed are rebuilt.
+
+        </p>
+        <h4>
+            Containers
+        </h4>
+        <p>
+            Container is a runnable instance of an image.
+            <br>
+            You could create, start, stop, move, or delete a container using the docker API or CLI.
+            <br>
+            You could connect a container to one or more networks, attach storage to it or
+            even create a new image based on the current container state.
+            <br><br>
+
+            By default a container is well isolated from the other containers.
+            <br>
+            When a container is stoped or removed, any changes are to its state that are not saved in a persistant storage would disappear.
+        </p>
+
+
+        </div>
+
+    </body>
+</html>
